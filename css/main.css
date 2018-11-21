@@ -1,0 +1,43 @@
+body {
+background-color: black;
+}
+
+div{
+    width: 100%;
+    display: block;
+
+}
+.banner{
+    height: 200px;
+    width: 100%;
+}
+
+.top_banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+}
+.title{
+    height: 33%;
+    text-align: center;
+    color: #33cc33;
+}
+.sub_title{
+    color:#33ee33;
+    text-align: center;
+}
+
+.guestbook{
+    height: 25%;
+    color: white;
+}
+.attention{
+    color:#ff0000;
+    font-weight: bold;
+}
+
+.comment{
+
+    height: 200px;
+}
