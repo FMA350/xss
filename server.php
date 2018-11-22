@@ -8,14 +8,12 @@ if($q="load_comments"){
     $xmlDoc->load("comments.xml");
     if($xmlDoc){
         $xml_comments=$xmlDoc->getElementsByTagName('comment');
-        for($i=0;$i<3;$i++){
-            for($i=0;$i<3;$i++){
-                echo("<h6> User: </h6>");
-                echo($xml_comments->item($i)->childNodes->item(0)->nodeValue);
-                echo("<br> Commented: <br>");
-                echo($xml_comments->item($i)->childNodes->item(1)->nodeValue);
-                echo("<br>");
-            }
+        for($i=0;$i<1;$i++){
+            echo("<h6> User: </h6>");
+            echo($xml_comments->item($i)->childNodes->item(0)->nodeValue);
+            echo("<br> Commented: <br>");
+            echo($xml_comments->item($i)->childNodes->item(1)->nodeValue);
+            echo("<br>");
         }
     }
     else{
