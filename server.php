@@ -4,8 +4,12 @@ $q=$_GET["q"];
 
 
 if($q="load_comments"){
-    $xmlDoc = new DOMDocument();
-    $xmlDoc->load("comments.xml");
+    $file = 'comments.xml'
+    if(file_exists($file)){
+        $xmlDoc = simplexml_load_file($file);
+    }
+    // $xmlDoc = new DOMDocument();
+    // $xmlDoc->load("comments.xml");
     if($xmlDoc){
         $xml_comments=$xmlDoc->getElementsByTagName('comment');
         if($xml_comments->length > 0){
