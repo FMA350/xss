@@ -8,7 +8,7 @@ if($q="load_comments"){
     $xmlDoc->load("comments.xml");
     if($xmlDoc){
         $xml_comments=$xmlDoc->getElementsByTagName('comment');
-        if($xml_comments->$length > 0){
+        if($xml_comments->length > 0){
             for($i=0;$i<1;$i++){
                 echo("<h6> User: </h6>");
                 echo($xml_comments->item($i)->childNodes->item(0)->nodeValue);
@@ -18,7 +18,7 @@ if($q="load_comments"){
             }
         }
         else{
-            echo "No comments are present!"
+            echo "No comments are present!";
         }
     }
     else{
